@@ -1,0 +1,47 @@
+.homeContainer {
+  width: 30rem;
+  min-height: 10rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+  padding: 1.5rem 1rem;
+
+  & :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > h1 {
+      //   display: flex;
+      align-items: flex-end;
+      small {
+        font-weight: 600;
+        font-size: small;
+        margin-left: 10px;
+        margin-bottom: 4px;
+        padding: 3px 7px;
+        border-radius: 3px;
+      }
+      .activesmall {
+        background-color: #5a8dac88;
+        color: #204d91;
+      }
+      .cancelsmall {
+        background-color: rgba(222, 85, 85, 0.466);
+        color: red;
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    small {
+      color: rgba(149, 147, 147, 0.75);
+    }
+  }
+  & > :last-child {
+    background-color: rgba(208, 204, 204, 0.335);
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: small;
+    font-weight: 600;
+  }
+}

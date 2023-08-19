@@ -1,0 +1,117 @@
+$bgColor: #204d91;
+
+.plansWrapper {
+  background-color: #fff;
+  height: 90vh;
+  .planContainer {
+    width: 70%;
+    min-height: 50vh;
+
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    .planRow {
+      display: flex;
+
+      .planHeading {
+        width: 40%;
+        .col1 {
+          height: 5rem;
+          margin-top: 10px;
+        }
+        .col1 > div {
+          width: 10rem;
+          padding: 0.6rem;
+          border-radius: 45px;
+          background-color: $bgColor;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          color: white;
+
+          > span {
+            display: block;
+            cursor: pointer;
+          }
+          .planActive {
+            background-color: #fff;
+            padding: 0.5rem;
+            border-radius: 45px;
+            color: $bgColor;
+          }
+        }
+
+        .col2 {
+          padding: 1rem 0;
+          border-bottom: 1.2px solid rgba(128, 128, 128, 0.543);
+        }
+      }
+
+      .planResult {
+        width: 10rem;
+        color: gray;
+        .col1 {
+          height: 5rem;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+        .col1 > div {
+          width: 5rem;
+          height: inherit;
+          padding: 0.6rem;
+          background-color: $bgColor;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          opacity: 0.6;
+          cursor: pointer;
+        }
+        .col1 > span {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          background-color: $bgColor;
+          position: absolute;
+          bottom: -2px;
+          left: 42%;
+          transform: rotate(45deg);
+        }
+
+        .col2 {
+          padding: 1rem 0;
+          border-bottom: 1.2px solid rgba(128, 128, 128, 0.543);
+          text-align: center;
+        }
+        .devicesCol {
+          padding: 0;
+          p {
+            margin-top: 1.5rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .planResultActiv {
+        color: $bgColor;
+        .col1 > div {
+          opacity: 1;
+        }
+      }
+    }
+
+    .selectplanButton {
+      width: 25vw;
+      margin: 1.5rem auto;
+      button {
+        background-color: $bgColor;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

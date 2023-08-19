@@ -1,0 +1,44 @@
+.loginWrapper {
+  width: 28rem;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 5px;
+
+  h2 {
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .inputLabelClass {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 0.8rem;
+    h6 {
+      font-weight: 600;
+    }
+  }
+
+  .rememberDiv {
+    margin-top: 1rem;
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .bgButtonBlue {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .AlreadyPresent {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loginWrapper {
+    width: 90%;
+  }
+}

@@ -1,0 +1,50 @@
+.paymentContainer {
+  background-color: #fff;
+  width: 60%;
+  min-height: 35vh;
+  color: black;
+  display: flex;
+  border-radius: 5px;
+  > div {
+    padding: 1.5rem;
+  }
+  .paymentProcess {
+    width: 60%;
+    height: 100%;
+    h1 {
+      font-weight: 700;
+    }
+    p {
+      margin-top: 5px;
+      color: gray;
+    }
+    > div {
+      margin-top: 1rem;
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      button {
+        margin-top: 1.5rem;
+        background-color: #204d91;
+        text-transform: capitalize;
+        color: white;
+      }
+    }
+  }
+
+  .orderSummary {
+    width: 40%;
+    background-color: rgba(215, 210, 210, 0.366);
+    h2 {
+      font-weight: 600;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem;
+      border-bottom: 1.5px solid rgba(155, 153, 153, 0.476);
+    }
+  }
+}
